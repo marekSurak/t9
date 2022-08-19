@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import { useState } from 'react'
 
 import { Keyboard } from 'components/Keyboard'
+import { Layout } from 'components/Layout'
 
 const Home: NextPage = () => {
   const [enteredNumbers, setEnteredNumbers] = useState<number[]>([])
@@ -11,10 +12,10 @@ const Home: NextPage = () => {
   }
 
   return (
-    <main>
+    <Layout>
       <section>{enteredNumbers}</section>
       <Keyboard onButtonClick={handleButtonClick} />
-    </main>
+    </Layout>
   )
 }
 
