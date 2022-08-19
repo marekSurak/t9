@@ -1,12 +1,16 @@
 import type { NextPage } from 'next'
 import { useState } from 'react'
 
+import { useGetPredictionsQuery } from 'api/queries/getPredictions'
 import { Display } from 'components/Display'
 import { Keyboard } from 'components/Keyboard'
 import { Layout } from 'components/Layout'
 
 const Home: NextPage = () => {
   const [enteredNumbers, setEnteredNumbers] = useState<number[]>([])
+  const { data } = useGetPredictionsQuery({})
+
+  console.log('data', data)
 
   const handleButtonClick = (value: number) => {
     setEnteredNumbers((prevState) => [...prevState, value])

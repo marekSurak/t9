@@ -1,15 +1,15 @@
 import type { UseQueryOptions } from 'react-query'
 import { useQuery } from 'react-query'
 
-import { apiClient } from 'api/apiClient'
+import { API_URL } from 'api/constants/api'
 import type { TPredictions } from 'api/types/predictions'
 import type { IRequestException } from 'api/types/requestException'
 
 type IGetUserProps = UseQueryOptions<TPredictions, IRequestException>
 
-const fetchPredictions = async (): Promise<TPredictions> => {
-  const response = await apiClient.get('/predictions', {})
-  return await response.json()
+const fetchPredictions = async () => {
+  const response = await fetch(`${API_URL}/predictions`)
+  return (await response.json()) as TPredictions
 }
 
 export const useGetPredictionsQuery = ({ ...options }: IGetUserProps) => {
