@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import { useState } from 'react'
 
+import { Display } from 'components/Display'
 import { Keyboard } from 'components/Keyboard'
 import { Layout } from 'components/Layout'
 
@@ -13,7 +14,7 @@ const Home: NextPage = () => {
 
   return (
     <Layout>
-      <section>{enteredNumbers}</section>
+      <Display>{enteredNumbers}</Display>
       <Keyboard onButtonClick={handleButtonClick} />
     </Layout>
   )
