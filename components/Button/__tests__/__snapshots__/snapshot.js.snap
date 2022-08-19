@@ -3,7 +3,7 @@
 exports[`Renders Button unchanged 1`] = `
 <div>
   <button
-    class="c-gNxxzW"
+    class="c-fecOcE"
   >
     Click me!
   </button>

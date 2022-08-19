@@ -1,1 +1,42 @@
-export const keyboardButtons: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+export const keyboardButtons = [
+  {
+    label: '',
+    value: 1,
+  },
+  {
+    label: 'ABC',
+    value: 2,
+  },
+  {
+    label: 'DEF',
+    value: 3,
+  },
+  {
+    label: 'GHI',
+    value: 4,
+  },
+  {
+    label: 'JKL',
+    value: 5,
+  },
+  {
+    label: 'MNO',
+    value: 6,
+  },
+  {
+    label: 'PQRS',
+    value: 7,
+  },
+  {
+    label: 'TUV',
+    value: 8,
+  },
+  {
+    label: 'WXYZ',
+    value: 9,
+  },
+  {
+    label: '+',
+    value: 0,
+  },
+]
