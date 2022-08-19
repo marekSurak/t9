@@ -15,9 +15,8 @@ interface IGetPredicitonProps
     IGetPrediction {}
 
 const fetchPredictions = async ({ data }: IGetPrediction) => {
-  const params = getUrlParams(data)
-  console.log('params', params)
-  const response = await fetch(`${API_URL}/predictions?${params}`)
+  const urlParams = getUrlParams(data)
+  const response = await fetch(`${API_URL}/predictions?${urlParams}`)
   return (await response.json()) as TPredictions
 }
 

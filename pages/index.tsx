@@ -10,8 +10,6 @@ const Home: NextPage = () => {
   const [enteredNumbers, setEnteredNumbers] = useState<number[]>([])
   const { data, isLoading } = useGetPredictionsQuery({ data: enteredNumbers })
 
-  console.log('data', data)
-
   const handleButtonClick = (value: number) => {
     setEnteredNumbers((prevState) => [...prevState, value])
   }
