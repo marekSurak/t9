@@ -8,7 +8,7 @@ import type { IRequestException } from 'api/types/requestException'
 type IGetUserProps = UseQueryOptions<TPredictions, IRequestException>
 
 const fetchPredictions = async (): Promise<TPredictions> => {
-  const response = await apiClient.get('users/me', {})
+  const response = await apiClient.get('/predictions', {})
   return await response.json()
 }
 
