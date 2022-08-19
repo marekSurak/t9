@@ -6,64 +6,152 @@ exports[`Renders Keyboard unchanged 1`] = `
     class="c-iZdgRD"
   >
     <button
-      class="c-gNxxzW"
+      class="c-fecOcE"
       type="button"
     >
-      1
+      <span
+        class="c-gHgbiV"
+      >
+        1
+      </span>
+      <span
+        class="c-EDrvg"
+      />
     </button>
     <button
-      class="c-gNxxzW"
+      class="c-fecOcE"
       type="button"
     >
-      2
+      <span
+        class="c-gHgbiV"
+      >
+        2
+      </span>
+      <span
+        class="c-EDrvg"
+      >
+        ABC
+      </span>
     </button>
     <button
-      class="c-gNxxzW"
+      class="c-fecOcE"
       type="button"
     >
-      3
+      <span
+        class="c-gHgbiV"
+      >
+        3
+      </span>
+      <span
+        class="c-EDrvg"
+      >
+        DEF
+      </span>
     </button>
     <button
-      class="c-gNxxzW"
+      class="c-fecOcE"
       type="button"
     >
-      4
+      <span
+        class="c-gHgbiV"
+      >
+        4
+      </span>
+      <span
+        class="c-EDrvg"
+      >
+        GHI
+      </span>
     </button>
     <button
-      class="c-gNxxzW"
+      class="c-fecOcE"
       type="button"
     >
-      5
+      <span
+        class="c-gHgbiV"
+      >
+        5
+      </span>
+      <span
+        class="c-EDrvg"
+      >
+        JKL
+      </span>
     </button>
     <button
-      class="c-gNxxzW"
+      class="c-fecOcE"
       type="button"
     >
-      6
+      <span
+        class="c-gHgbiV"
+      >
+        6
+      </span>
+      <span
+        class="c-EDrvg"
+      >
+        MNO
+      </span>
     </button>
     <button
-      class="c-gNxxzW"
+      class="c-fecOcE"
       type="button"
     >
-      7
+      <span
+        class="c-gHgbiV"
+      >
+        7
+      </span>
+      <span
+        class="c-EDrvg"
+      >
+        PQRS
+      </span>
     </button>
     <button
-      class="c-gNxxzW"
+      class="c-fecOcE"
       type="button"
     >
-      8
+      <span
+        class="c-gHgbiV"
+      >
+        8
+      </span>
+      <span
+        class="c-EDrvg"
+      >
+        TUV
+      </span>
     </button>
     <button
-      class="c-gNxxzW"
+      class="c-fecOcE"
       type="button"
     >
-      9
+      <span
+        class="c-gHgbiV"
+      >
+        9
+      </span>
+      <span
+        class="c-EDrvg"
+      >
+        WXYZ
+      </span>
     </button>
     <button
-      class="c-gNxxzW"
+      class="c-fecOcE"
       type="button"
     >
-      0
+      <span
+        class="c-gHgbiV"
+      >
+        0
+      </span>
+      <span
+        class="c-EDrvg"
+      >
+        +
+      </span>
     </button>
   </section>
 </div>

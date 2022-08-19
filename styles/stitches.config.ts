@@ -5,7 +5,10 @@ export const { styled, getCssText } = createStitches({
     fonts: {
       montserrat: 'Montserrat, -aple-system, system-ui',
     },
-    colors: {},
+    colors: {
+      button: '#e5e5e4',
+      buttonHover: '#c6c6c6',
+    },
     fontSizes: {
       1: '11px',
       2: '13px',
