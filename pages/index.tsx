@@ -8,7 +8,7 @@ import { Layout } from 'components/Layout'
 
 const Home: NextPage = () => {
   const [enteredNumbers, setEnteredNumbers] = useState<number[]>([])
-  const { data } = useGetPredictionsQuery({})
+  const { data, isLoading } = useGetPredictionsQuery({ data: enteredNumbers })
 
   console.log('data', data)
 
@@ -19,6 +19,8 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <Display>{enteredNumbers}</Display>
+      {isLoading && <div>...</div>}
+      {data}
       <Keyboard onButtonClick={handleButtonClick} />
     </Layout>
   )

@@ -4,18 +4,30 @@ import { useQuery } from 'react-query'
 import { API_URL } from 'api/constants/api'
 import type { TPredictions } from 'api/types/predictions'
 import type { IRequestException } from 'api/types/requestException'
+import { getUrlParams } from 'api/utils/getUrlParams'
 
-type IGetUserProps = UseQueryOptions<TPredictions, IRequestException>
+interface IGetPrediction {
+  data: number[]
+}
 
-const fetchPredictions = async () => {
-  const response = await fetch(`${API_URL}/predictions`)
+interface IGetPredicitonProps
+  extends UseQueryOptions<TPredictions, IRequestException>,
+    IGetPrediction {}
+
+const fetchPredictions = async ({ data }: IGetPrediction) => {
+  const params = getUrlParams(data)
+  console.log('params', params)
+  const response = await fetch(`${API_URL}/predictions?${params}`)
   return (await response.json()) as TPredictions
 }
 
-export const useGetPredictionsQuery = ({ ...options }: IGetUserProps) => {
+export const useGetPredictionsQuery = ({
+  data,
+  ...options
+}: IGetPredicitonProps) => {
   return useQuery<TPredictions, IRequestException>(
-    'predictions',
-    async () => await fetchPredictions(),
+    ['predictions', { data }],
+    async () => await fetchPredictions({ data }),
     { ...options }
   )
 }

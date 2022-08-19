@@ -1,13 +1,14 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
 
-type Data = {
-  name: string
-}
+import type { TPredictions } from 'api/types/predictions'
+import { generatePredictions } from 'api/utils/generatePredictions'
 
 export default function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Data>
+  res: NextApiResponse<TPredictions>
 ) {
-  res.status(200).json({ name: 'John Doe' })
+  const query = req.query.data as string
+  const predictions = generatePredictions(query)
+  res.status(200).json(predictions)
 }
