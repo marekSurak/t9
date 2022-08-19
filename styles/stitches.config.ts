@@ -20,6 +20,11 @@ export const { styled, getCssText } = createStitches({
       3: '1rem',
       4: '2rem',
     },
+    sizes: {
+      1: '1rem',
+      2: '2rem',
+      3: '3rem',
+    },
     shadows: {},
   },
 })
