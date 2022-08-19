@@ -10,3 +10,10 @@ export const KeyboardContainer = styled('section', {
     gridColumnEnd: '3',
   },
 })
+
+export const ButtonNumber = styled('span', {
+  fontSize: '$4',
+})
+export const ButtonText = styled('span', {
+  fontSize: '$1',
+})

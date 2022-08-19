@@ -4,7 +4,7 @@ import React from 'react'
 import { Button } from 'components/Button'
 import { keyboardButtons } from 'constants/keyboard'
 
-import { KeyboardContainer } from './styled'
+import { ButtonNumber, ButtonText, KeyboardContainer } from './styled'
 
 interface IProps {
   onButtonClick: (value: number) => void
@@ -15,11 +15,12 @@ export const Keyboard: FC<IProps> = ({ onButtonClick }) => {
     <KeyboardContainer>
       {keyboardButtons.map((button) => (
         <Button
-          key={button}
+          key={button.value}
           type="button"
-          onClick={() => onButtonClick(button)}
+          onClick={() => onButtonClick(button.value)}
         >
-          {button}
+          <ButtonNumber>{button.value}</ButtonNumber>
+          <ButtonText>{button.label}</ButtonText>
         </Button>
       ))}
     </KeyboardContainer>
