@@ -1,6 +1,6 @@
 import ky from 'ky'
 
-import { API_URL } from 'constants/api'
+import { API_URL } from './constants/api'
 
 export const apiClient = ky.extend({
   prefixUrl: API_URL,
