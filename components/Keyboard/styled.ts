@@ -12,7 +12,7 @@ export const KeyboardContainer = styled('section', {
 })
 
 export const ButtonNumber = styled('span', {
-  fontSize: '$4',
+  fontSize: '$5',
 })
 export const ButtonText = styled('span', {
   fontSize: '$1',
