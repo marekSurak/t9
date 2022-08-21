@@ -7,6 +7,7 @@ export const PhoneMockup = styled('div', {
   width: '$phoneWidth',
   height: '$phoneHeight',
   overflow: 'hidden',
+  padding: '$1 $3',
 
   border: '1px solid black',
 })

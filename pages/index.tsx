@@ -3,6 +3,7 @@ import { useState } from 'react'
 
 import { useGetPredictionsQuery } from 'api/queries/getPredictions'
 import { Display } from 'components/Display'
+import { Header } from 'components/Header'
 import { Keyboard } from 'components/Keyboard'
 import { Layout } from 'components/Layout'
 import { PhoneMockup } from 'components/PhoneMockup'
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <PhoneMockup>
+        <Header />
         <Display>{enteredNumbers}</Display>
         {isLoading && <div>...</div>}
         <Predictions predictions={data} />
