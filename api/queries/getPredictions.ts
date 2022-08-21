@@ -27,6 +27,6 @@ export const useGetPredictionsQuery = ({
   return useQuery<TPredictions, IRequestException>(
     ['predictions', { query }],
     async () => await fetchPredictions({ query }),
-    { ...options }
+    { enabled: !!query.length, ...options }
   )
 }
