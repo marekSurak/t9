@@ -25,15 +25,19 @@ export const { styled, getCssText } = createStitches({
       2: '0.5rem',
       3: '1rem',
       4: '2rem',
+      5: '3rem',
     },
     sizes: {
       1: '1rem',
       2: '2rem',
       3: '3rem',
       4: '4rem',
-      phoneWidth: '20rem',
-      phoneHeight: '30rem',
+      phoneWidth: '23.25rem',
+      phoneHeight: '46.875rem',
     },
     shadows: {},
+    zIndices: {
+      phone: '-1',
+    },
   },
 })
