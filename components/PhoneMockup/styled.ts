@@ -12,7 +12,7 @@ export const PhoneContent = styled('div', {
   width: '$phoneWidth',
   height: '$phoneHeight',
   overflow: 'hidden',
-  padding: '$4 $5',
+  padding: '1.75rem $5 $4',
 })
 
 export const ImageContainer = styled('div', {
