@@ -1,5 +1,5 @@
-export const getUrlParams = (data: number[] | string[]) => {
-  if (!data || !data.length) return ''
+export const getUrlParams = (query: number[] | string[]) => {
+  if (!query || !query.length) return ''
 
-  return new URLSearchParams({ data: data.join('') }).toString()
+  return new URLSearchParams({ query: query.join('') }).toString()
 }

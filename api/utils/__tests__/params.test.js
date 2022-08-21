@@ -16,12 +16,12 @@ describe('Api utils - getUrlParams', () => {
   test('Retrun correct params for [1,2,3]', () => {
     const params = getUrlParams([1, 2, 3])
 
-    expect(params).toEqual('data=123')
+    expect(params).toEqual('query=123')
   })
 
   test('Retrun correct params for ["1","2","3"]', () => {
     const params = getUrlParams(['1', '2', '3'])
 
-    expect(params).toEqual('data=123')
+    expect(params).toEqual('query=123')
   })
 })

@@ -8,7 +8,7 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<TPredictions>
 ) {
-  const query = req.query.data as string
-  const predictions = generatePredictions(query)
+  const { query } = req.query
+  const predictions = generatePredictions(query as string)
   res.status(200).json(predictions)
 }

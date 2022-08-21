@@ -7,28 +7,26 @@ import type { IRequestException } from 'api/types/requestException'
 import { getUrlParams } from 'api/utils/getUrlParams'
 
 interface IGetPrediction {
-  data: number[]
+  query: number[]
 }
 
 interface IGetPredicitonProps
   extends UseQueryOptions<TPredictions, IRequestException>,
     IGetPrediction {}
 
-const fetchPredictions = async ({ data }: IGetPrediction) => {
-  console.log('data', data)
-  const urlParams = getUrlParams(data)
-  console.log('urlParams', urlParams)
+const fetchPredictions = async ({ query }: IGetPrediction) => {
+  const urlParams = getUrlParams(query)
   const response = await fetch(`${API_URL}/predictions?${urlParams}`)
   return (await response.json()) as TPredictions
 }
 
 export const useGetPredictionsQuery = ({
-  data,
+  query,
   ...options
 }: IGetPredicitonProps) => {
   return useQuery<TPredictions, IRequestException>(
-    ['predictions', { data }],
-    async () => await fetchPredictions({ data }),
+    ['predictions', { query }],
+    async () => await fetchPredictions({ query }),
     { ...options }
   )
 }
