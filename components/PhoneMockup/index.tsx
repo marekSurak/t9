@@ -12,7 +12,13 @@ interface IProps {
 export const PhoneMockup: FC<IProps> = ({ children }) => (
   <PhoneContainer>
     <ImageContainer>
-      <Image src={IphoneImageSrc} alt="Iphone image" placeholder="blur" />
+      <Image
+        src={IphoneImageSrc}
+        width="372"
+        height="750"
+        alt="Iphone image"
+        placeholder="blur"
+      />
     </ImageContainer>
     <PhoneContent>{children}</PhoneContent>
   </PhoneContainer>
