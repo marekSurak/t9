@@ -10,14 +10,14 @@ interface IProps {
 }
 
 export const Predictions: FC<IProps> = ({ predictions }) => {
-  if (!predictions?.length) return null
+  if (!predictions || !predictions?.length) return null
 
   return (
     <PredictionsContainer>
-      {predictions.map((prediction) => (
+      {predictions.map((prediction, index) => (
         <React.Fragment key={prediction}>
           <PredictionItem>{prediction}</PredictionItem>
-          <Separator />
+          {index < predictions.length - 1 && <Separator />}
         </React.Fragment>
       ))}
     </PredictionsContainer>
