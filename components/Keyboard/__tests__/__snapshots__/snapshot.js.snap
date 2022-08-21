@@ -3,14 +3,14 @@
 exports[`Renders Keyboard unchanged 1`] = `
 <div>
   <section
-    class="c-iZdgRD"
+    class="c-duVVBN"
   >
     <button
-      class="c-fecOcE"
+      class="c-diLMKw"
       type="button"
     >
       <span
-        class="c-gHgbiV"
+        class="c-jgiWaE"
       >
         1
       </span>
@@ -19,11 +19,11 @@ exports[`Renders Keyboard unchanged 1`] = `
       />
     </button>
     <button
-      class="c-fecOcE"
+      class="c-diLMKw"
       type="button"
     >
       <span
-        class="c-gHgbiV"
+        class="c-jgiWaE"
       >
         2
       </span>
@@ -34,11 +34,11 @@ exports[`Renders Keyboard unchanged 1`] = `
       </span>
     </button>
     <button
-      class="c-fecOcE"
+      class="c-diLMKw"
       type="button"
     >
       <span
-        class="c-gHgbiV"
+        class="c-jgiWaE"
       >
         3
       </span>
@@ -49,11 +49,11 @@ exports[`Renders Keyboard unchanged 1`] = `
       </span>
     </button>
     <button
-      class="c-fecOcE"
+      class="c-diLMKw"
       type="button"
     >
       <span
-        class="c-gHgbiV"
+        class="c-jgiWaE"
       >
         4
       </span>
@@ -64,11 +64,11 @@ exports[`Renders Keyboard unchanged 1`] = `
       </span>
     </button>
     <button
-      class="c-fecOcE"
+      class="c-diLMKw"
       type="button"
     >
       <span
-        class="c-gHgbiV"
+        class="c-jgiWaE"
       >
         5
       </span>
@@ -79,11 +79,11 @@ exports[`Renders Keyboard unchanged 1`] = `
       </span>
     </button>
     <button
-      class="c-fecOcE"
+      class="c-diLMKw"
       type="button"
     >
       <span
-        class="c-gHgbiV"
+        class="c-jgiWaE"
       >
         6
       </span>
@@ -94,11 +94,11 @@ exports[`Renders Keyboard unchanged 1`] = `
       </span>
     </button>
     <button
-      class="c-fecOcE"
+      class="c-diLMKw"
       type="button"
     >
       <span
-        class="c-gHgbiV"
+        class="c-jgiWaE"
       >
         7
       </span>
@@ -109,11 +109,11 @@ exports[`Renders Keyboard unchanged 1`] = `
       </span>
     </button>
     <button
-      class="c-fecOcE"
+      class="c-diLMKw"
       type="button"
     >
       <span
-        class="c-gHgbiV"
+        class="c-jgiWaE"
       >
         8
       </span>
@@ -124,11 +124,11 @@ exports[`Renders Keyboard unchanged 1`] = `
       </span>
     </button>
     <button
-      class="c-fecOcE"
+      class="c-diLMKw"
       type="button"
     >
       <span
-        class="c-gHgbiV"
+        class="c-jgiWaE"
       >
         9
       </span>
@@ -139,11 +139,11 @@ exports[`Renders Keyboard unchanged 1`] = `
       </span>
     </button>
     <button
-      class="c-fecOcE"
+      class="c-diLMKw"
       type="button"
     >
       <span
-        class="c-gHgbiV"
+        class="c-jgiWaE"
       >
         0
       </span>

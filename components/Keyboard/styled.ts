@@ -3,7 +3,7 @@ import { styled } from 'styles/stitches.config'
 export const KeyboardContainer = styled('section', {
   display: 'grid',
   gridTemplateColumns: 'repeat(3, 1fr)',
-  width: '11rem',
+  // width: '11rem',
   gap: '$2',
 
   '& button:last-of-type': {
@@ -12,7 +12,7 @@ export const KeyboardContainer = styled('section', {
 })
 
 export const ButtonNumber = styled('span', {
-  fontSize: '$4',
+  fontSize: '$5',
 })
 export const ButtonText = styled('span', {
   fontSize: '$1',
