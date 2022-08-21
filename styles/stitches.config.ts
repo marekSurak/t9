@@ -31,6 +31,8 @@ export const { styled, getCssText } = createStitches({
       2: '2rem',
       3: '3rem',
       4: '4rem',
+      phoneWidth: '20rem',
+      phoneHeight: '30rem',
     },
     shadows: {},
   },

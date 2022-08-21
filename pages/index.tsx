@@ -5,6 +5,7 @@ import { useGetPredictionsQuery } from 'api/queries/getPredictions'
 import { Display } from 'components/Display'
 import { Keyboard } from 'components/Keyboard'
 import { Layout } from 'components/Layout'
+import { PhoneMockup } from 'components/PhoneMockup'
 import { Predictions } from 'components/Predictions'
 
 const Home: NextPage = () => {
@@ -17,10 +18,12 @@ const Home: NextPage = () => {
 
   return (
     <Layout>
-      <Display>{enteredNumbers}</Display>
-      {isLoading && <div>...</div>}
-      <Predictions predictions={data} />
-      <Keyboard onButtonClick={handleButtonClick} />
+      <PhoneMockup>
+        <Display>{enteredNumbers}</Display>
+        {isLoading && <div>...</div>}
+        <Predictions predictions={data} />
+        <Keyboard onButtonClick={handleButtonClick} />
+      </PhoneMockup>
     </Layout>
   )
 }
