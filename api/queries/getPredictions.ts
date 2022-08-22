@@ -6,15 +6,15 @@ import type { TPredictions } from 'api/types/predictions'
 import type { IRequestException } from 'api/types/requestException'
 import { getUrlParams } from 'api/utils/getUrlParams'
 
-interface IGetPrediction {
+interface IProps {
   query: number[]
 }
 
 interface IGetPredicitonProps
   extends UseQueryOptions<TPredictions, IRequestException>,
-    IGetPrediction {}
+    IProps {}
 
-const fetchPredictions = async ({ query }: IGetPrediction) => {
+const fetchPredictions = async ({ query }: IProps) => {
   const urlParams = getUrlParams(query)
   const response = await fetch(`${API_URL}/predictions?${urlParams}`)
   return (await response.json()) as TPredictions
