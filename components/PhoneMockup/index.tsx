@@ -1,9 +1,8 @@
-import Image from 'next/image'
 import type { FC } from 'react'
+import React from 'react'
 
-import IphoneImageSrc from 'public/images/iphone.png'
-
-import { PhoneContainer, ImageContainer, PhoneContent } from './styled'
+import { MemoizedPhoneImage as PhoneImage } from './components/PhoneImage'
+import { PhoneContainer, PhoneContent } from './styled'
 
 interface IProps {
   children: React.ReactNode
@@ -11,15 +10,7 @@ interface IProps {
 
 export const PhoneMockup: FC<IProps> = ({ children }) => (
   <PhoneContainer>
-    <ImageContainer>
-      <Image
-        src={IphoneImageSrc}
-        width="372"
-        height="750"
-        alt="Iphone image"
-        placeholder="blur"
-      />
-    </ImageContainer>
+    <PhoneImage />
     <PhoneContent>{children}</PhoneContent>
   </PhoneContainer>
 )
