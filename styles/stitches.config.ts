@@ -21,7 +21,9 @@ export const { styled, getCssText } = createStitches({
       regular: 400,
       bold: 700,
     },
-    radii: {},
+    radii: {
+      1: '0.625rem',
+    },
     space: {
       1: '0.25rem',
       2: '0.5rem',
