@@ -1,0 +1,1 @@
+export type TWordsList = string[]
