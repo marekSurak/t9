@@ -3,10 +3,10 @@
 exports[`Renders Predictions unchanged 1`] = `
 <div>
   <ul
-    class="c-hMhGXV"
+    class="c-icXWdf"
   >
     <li
-      class="c-gHgbiV"
+      class="c-OQLUz"
     >
       ad
     </li>
@@ -14,7 +14,7 @@ exports[`Renders Predictions unchanged 1`] = `
       class="c-fkaaSt"
     />
     <li
-      class="c-gHgbiV"
+      class="c-OQLUz"
     >
       ae
     </li>
@@ -22,7 +22,7 @@ exports[`Renders Predictions unchanged 1`] = `
       class="c-fkaaSt"
     />
     <li
-      class="c-gHgbiV"
+      class="c-OQLUz"
     >
       af
     </li>
@@ -30,7 +30,7 @@ exports[`Renders Predictions unchanged 1`] = `
       class="c-fkaaSt"
     />
     <li
-      class="c-gHgbiV"
+      class="c-OQLUz"
     >
       bd
     </li>
@@ -38,7 +38,7 @@ exports[`Renders Predictions unchanged 1`] = `
       class="c-fkaaSt"
     />
     <li
-      class="c-gHgbiV"
+      class="c-OQLUz"
     >
       be
     </li>
@@ -46,7 +46,7 @@ exports[`Renders Predictions unchanged 1`] = `
       class="c-fkaaSt"
     />
     <li
-      class="c-gHgbiV"
+      class="c-OQLUz"
     >
       bf
     </li>
@@ -54,7 +54,7 @@ exports[`Renders Predictions unchanged 1`] = `
       class="c-fkaaSt"
     />
     <li
-      class="c-gHgbiV"
+      class="c-OQLUz"
     >
       cd
     </li>
@@ -62,7 +62,7 @@ exports[`Renders Predictions unchanged 1`] = `
       class="c-fkaaSt"
     />
     <li
-      class="c-gHgbiV"
+      class="c-OQLUz"
     >
       ce
     </li>
@@ -70,7 +70,7 @@ exports[`Renders Predictions unchanged 1`] = `
       class="c-fkaaSt"
     />
     <li
-      class="c-gHgbiV"
+      class="c-OQLUz"
     >
       cf
     </li>

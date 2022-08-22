@@ -15,12 +15,15 @@ export const { styled, getCssText } = createStitches({
       3: '15px',
       4: '19px',
       5: '21px',
+      6: '33px',
     },
     fontWeights: {
       regular: 400,
       bold: 700,
     },
-    radii: {},
+    radii: {
+      1: '0.625rem',
+    },
     space: {
       1: '0.25rem',
       2: '0.5rem',

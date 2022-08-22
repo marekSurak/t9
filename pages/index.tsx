@@ -22,8 +22,7 @@ const Home: NextPage = () => {
       <PhoneMockup>
         <Header />
         <Display>{enteredNumbers}</Display>
-        {isLoading && <div>...</div>}
-        <Predictions predictions={data} />
+        <Predictions predictions={data} isLoading={isLoading} />
         <Keyboard onButtonClick={handleButtonClick} />
       </PhoneMockup>
     </Layout>

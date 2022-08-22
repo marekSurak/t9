@@ -3,7 +3,8 @@ import { styled } from 'styles/stitches.config'
 export const KeyboardContainer = styled('section', {
   display: 'grid',
   gridTemplateColumns: 'repeat(3, 1fr)',
-  // width: '11rem',
+  justifyItems: 'center',
+  padding: '0 $3',
   gap: '$2',
 
   '& button:last-of-type': {
