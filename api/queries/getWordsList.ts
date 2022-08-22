@@ -8,6 +8,7 @@ import { getUrlParams } from 'api/utils/getUrlParams'
 
 interface IProps {
   query: number[]
+  isRealWordsSearch: boolean
 }
 
 interface IGetPredicitonProps
@@ -22,11 +23,12 @@ const fetchWordsList = async ({ query }: IProps) => {
 
 export const useGetWordsListQuery = ({
   query,
+  isRealWordsSearch,
   ...options
 }: IGetPredicitonProps) => {
   return useQuery<TWordsList, IRequestException>(
-    ['words-list', { query }],
-    async () => await fetchWordsList({ query }),
-    { ...options }
+    ['words-list', { query, isRealWordsSearch }],
+    async () => await fetchWordsList({ query, isRealWordsSearch }),
+    { enabled: isRealWordsSearch, ...options }
   )
 }

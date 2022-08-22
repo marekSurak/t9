@@ -12,11 +12,13 @@ import { Predictions } from 'components/Predictions'
 
 const Home: NextPage = () => {
   const [query, setQuery] = useState<number[]>([])
-  const { data, isLoading } = useGetPredictionsQuery({ query })
+  const [isRealWordsSearch, setRealWordsSearch] = useState<boolean>(false)
 
-  const { data: wordsListData } = useGetWordsListQuery({ query })
-
-  console.log('wordsListData', wordsListData)
+  const { data: predictionsData, isLoading } = useGetPredictionsQuery({ query })
+  const { data: wordsListData } = useGetWordsListQuery({
+    query,
+    isRealWordsSearch,
+  })
 
   const handleButtonClick = useCallback(
     (value: number) => {
@@ -33,7 +35,16 @@ const Home: NextPage = () => {
     <PhoneFrame>
       <Header />
       <Display>{query}</Display>
-      <Predictions predictions={data} isLoading={isLoading} />
+      <Predictions
+        predictions={isRealWordsSearch ? wordsListData : predictionsData}
+        isLoading={isLoading}
+      />
+      <input
+        type="checkbox"
+        checked={isRealWordsSearch}
+        onClick={() => setRealWordsSearch((prev) => !prev)}
+      />
+      search only meaningful words
       <Keyboard onButtonClick={handleButtonClick} />
       {query.length ? (
         <DeleteButton onClick={handleDeleteQuery}>x</DeleteButton>
