@@ -1,5 +1,7 @@
 import { styled } from 'styles/stitches.config'
 
 export const DisplayContainer = styled('section', {
-  margin: '$3',
+  alignSelf: 'center',
+  textAlign: 'center',
+  fontSize: '$6',
 })

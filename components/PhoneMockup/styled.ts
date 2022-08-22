@@ -5,14 +5,13 @@ export const PhoneContainer = styled('div', {
 })
 
 export const PhoneContent = styled('div', {
-  display: 'flex',
-  flexFlow: 'column',
-  alignItems: 'center',
-  justifyContent: 'space-between',
+  display: 'grid',
+  gridAutoRows: '1fr 2fr 2fr 2fr',
+
   width: '$phoneWidth',
   height: '$phoneHeight',
   overflow: 'hidden',
-  padding: '1.75rem $5 $4',
+  padding: '0 $4 $4',
 })
 
 export const ImageContainer = styled('div', {

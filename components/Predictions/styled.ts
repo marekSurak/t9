@@ -3,6 +3,7 @@ import { styled } from 'styles/stitches.config'
 export const PredictionsContainer = styled('ul', {
   display: 'flex',
   gap: '$3',
+  alignSelf: 'center',
   overflowX: 'scroll',
   width: 'calc($phoneWidth - $4)',
 })
