@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react'
-import { Keyboard } from 'components/Keyboard'
+import { MemoizedKeyboard as Keyboard } from 'components/Keyboard'
 import { keyboardButtons } from 'constants/keyboard'
 
 describe('Keyboard', () => {

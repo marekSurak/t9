@@ -10,19 +10,19 @@ interface IProps {
   onButtonClick: (value: number) => void
 }
 
-export const Keyboard: FC<IProps> = ({ onButtonClick }) => {
-  return (
-    <KeyboardContainer>
-      {keyboardButtons.map((button) => (
-        <Button
-          key={button.value}
-          type="button"
-          onClick={() => onButtonClick(button.value)}
-        >
-          <ButtonNumber>{button.value}</ButtonNumber>
-          <ButtonText>{button.label}</ButtonText>
-        </Button>
-      ))}
-    </KeyboardContainer>
-  )
-}
+const Keyboard: FC<IProps> = ({ onButtonClick }) => (
+  <KeyboardContainer>
+    {keyboardButtons.map((button) => (
+      <Button
+        key={button.value}
+        type="button"
+        onClick={() => onButtonClick(button.value)}
+      >
+        <ButtonNumber>{button.value}</ButtonNumber>
+        <ButtonText>{button.label}</ButtonText>
+      </Button>
+    ))}
+  </KeyboardContainer>
+)
+
+export const MemoizedKeyboard = React.memo(Keyboard)

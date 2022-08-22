@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react'
-import { DeleteButton } from 'components/DeleteButton'
+import { MemoizedDeleteButton as DeleteButton } from 'components/DeleteButton'
 
 describe('Delete Button', () => {
   test('calls onClick prop when clicked', () => {

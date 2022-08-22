@@ -14,9 +14,3 @@ export const PhoneContent = styled('div', {
   overflow: 'hidden',
   padding: '0 $4 $4',
 })
-
-export const ImageContainer = styled('div', {
-  position: 'absolute',
-  top: '0',
-  zIndex: '$phone',
-})
