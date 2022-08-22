@@ -8,6 +8,7 @@ export const { styled, getCssText } = createStitches({
     colors: {
       button: '#e5e5e4',
       buttonHover: '#c6c6c6',
+      light: '#f7f7f7',
     },
     fontSizes: {
       1: '11px',

@@ -9,6 +9,7 @@ import { MemiozedHeader as Header } from 'components/Header'
 import { MemoizedKeyboard as Keyboard } from 'components/Keyboard'
 import { PhoneFrame } from 'components/PhoneFrame'
 import { Predictions } from 'components/Predictions'
+import { MemoizedToggle as Toggle } from 'components/Toggle'
 
 const Home: NextPage = () => {
   const [query, setQuery] = useState<number[]>([])
@@ -31,6 +32,10 @@ const Home: NextPage = () => {
     setQuery((prevState) => prevState.slice(0, -1))
   }, [setQuery])
 
+  const handleToggle = useCallback(() => {
+    setRealWordsSearch((checked) => !checked)
+  }, [setRealWordsSearch])
+
   return (
     <PhoneFrame>
       <Header />
@@ -39,12 +44,7 @@ const Home: NextPage = () => {
         predictions={isRealWordsSearch ? wordsListData : predictionsData}
         isLoading={isLoading}
       />
-      <input
-        type="checkbox"
-        checked={isRealWordsSearch}
-        onClick={() => setRealWordsSearch((prev) => !prev)}
-      />
-      search only meaningful words
+      <Toggle checked={isRealWordsSearch} onClick={handleToggle} />
       <Keyboard onButtonClick={handleButtonClick} />
       {query.length ? (
         <DeleteButton onClick={handleDeleteQuery}>x</DeleteButton>
