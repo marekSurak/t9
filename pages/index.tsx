@@ -29,7 +29,9 @@ const Home: NextPage = () => {
         <Display>{enteredNumbers}</Display>
         <Predictions predictions={data} isLoading={isLoading} />
         <Keyboard onButtonClick={handleButtonClick} />
-        <DeleteButton onClick={handleDeleteQuery}>x</DeleteButton>
+        {enteredNumbers.length ? (
+          <DeleteButton onClick={handleDeleteQuery}>x</DeleteButton>
+        ) : null}
       </PhoneMockup>
     </Layout>
   )
