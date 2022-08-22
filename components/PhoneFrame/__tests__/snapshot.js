@@ -1,14 +1,14 @@
 import { render } from '@testing-library/react'
-import { PhoneMockup } from 'components/PhoneMockup'
+import { PhoneFrame } from 'components/PhoneFrame'
 import { MemoizedKeyboard as Keyboard } from 'components/Keyboard'
 import { MemoizedDeleteButton as DeleteButton } from 'components/DeleteButton'
 
 it('Renders Phone frame unchanged', () => {
   const { container } = render(
-    <PhoneMockup>
+    <PhoneFrame>
       <Keyboard />
       <DeleteButton onClick={() => {}}>x</DeleteButton>
-    </PhoneMockup>
+    </PhoneFrame>
   )
   expect(container).toMatchSnapshot()
 })

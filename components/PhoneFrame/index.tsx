@@ -8,7 +8,7 @@ interface IProps {
   children: React.ReactNode
 }
 
-export const PhoneMockup: FC<IProps> = ({ children }) => (
+export const PhoneFrame: FC<IProps> = ({ children }) => (
   <PhoneContainer>
     <PhoneImage />
     <PhoneContent>{children}</PhoneContent>

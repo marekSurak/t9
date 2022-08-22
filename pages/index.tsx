@@ -6,34 +6,34 @@ import { MemoizedDeleteButton as DeleteButton } from 'components/DeleteButton'
 import { Display } from 'components/Display'
 import { MemiozedHeader as Header } from 'components/Header'
 import { MemoizedKeyboard as Keyboard } from 'components/Keyboard'
-import { PhoneMockup } from 'components/PhoneMockup'
+import { PhoneFrame } from 'components/PhoneFrame'
 import { Predictions } from 'components/Predictions'
 
 const Home: NextPage = () => {
-  const [enteredNumbers, setEnteredNumbers] = useState<number[]>([])
-  const { data, isLoading } = useGetPredictionsQuery({ query: enteredNumbers })
+  const [query, setQuery] = useState<number[]>([])
+  const { data, isLoading } = useGetPredictionsQuery({ query })
 
   const handleButtonClick = useCallback(
     (value: number) => {
-      setEnteredNumbers((prevState) => [...prevState, value])
+      setQuery((prevState) => [...prevState, value])
     },
-    [setEnteredNumbers]
+    [setQuery]
   )
 
   const handleDeleteQuery = useCallback(() => {
-    setEnteredNumbers((prevState) => prevState.slice(0, -1))
-  }, [setEnteredNumbers])
+    setQuery((prevState) => prevState.slice(0, -1))
+  }, [setQuery])
 
   return (
-    <PhoneMockup>
+    <PhoneFrame>
       <Header />
-      <Display>{enteredNumbers}</Display>
+      <Display>{query}</Display>
       <Predictions predictions={data} isLoading={isLoading} />
       <Keyboard onButtonClick={handleButtonClick} />
-      {enteredNumbers.length ? (
+      {query.length ? (
         <DeleteButton onClick={handleDeleteQuery}>x</DeleteButton>
       ) : null}
-    </PhoneMockup>
+    </PhoneFrame>
   )
 }
 
