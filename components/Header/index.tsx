@@ -1,4 +1,5 @@
 import type { FC } from 'react'
+import React from 'react'
 
 import { BatteryIcon } from 'components/icons/BatteryIcon'
 import { SignalIcon } from 'components/icons/SignalIcon'
@@ -7,7 +8,7 @@ import { WifiIcon } from 'components/icons/WifiIcon'
 import { Time } from './components/Time'
 import { HeaderContainer, IconsContainer } from './styled'
 
-export const Header: FC = () => (
+const Header: FC = () => (
   <HeaderContainer>
     <Time />
 
@@ -18,3 +19,5 @@ export const Header: FC = () => (
     </IconsContainer>
   </HeaderContainer>
 )
+
+export const MemiozedHeader = React.memo(Header)
