@@ -13,7 +13,12 @@ const TOGGLE_ID = 'toggle'
 const Toggle: FC<IProps> = ({ checked, onClick }) => (
   <ToggleContainer>
     <label htmlFor={TOGGLE_ID}>Use word list</label>
-    <input id={TOGGLE_ID} type="checkbox" checked={checked} onClick={onClick} />
+    <input
+      id={TOGGLE_ID}
+      type="checkbox"
+      checked={checked}
+      onChange={onClick}
+    />
   </ToggleContainer>
 )
 
