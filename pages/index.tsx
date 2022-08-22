@@ -36,6 +36,8 @@ const Home: NextPage = () => {
     setRealWordsSearch((checked) => !checked)
   }, [setRealWordsSearch])
 
+  const hasQuery = !!query.length
+
   return (
     <PhoneFrame>
       <Header />
@@ -44,9 +46,10 @@ const Home: NextPage = () => {
         predictions={isRealWordsSearch ? wordsListData : predictionsData}
         isLoading={isLoading}
       />
+
       <Toggle checked={isRealWordsSearch} onClick={handleToggle} />
       <Keyboard onButtonClick={handleButtonClick} />
-      {query.length ? (
+      {hasQuery ? (
         <DeleteButton onClick={handleDeleteQuery}>x</DeleteButton>
       ) : null}
     </PhoneFrame>
