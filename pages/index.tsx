@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import { useCallback, useState } from 'react'
 
 import { useGetPredictionsQuery } from 'api/queries/getPredictions'
-import { DeleteButton } from 'components/DeleteButton'
+import { MemoizedDeleteButton as DeleteButton } from 'components/DeleteButton'
 import { Display } from 'components/Display'
 import { MemiozedHeader as Header } from 'components/Header'
 import { MemoizedKeyboard as Keyboard } from 'components/Keyboard'
