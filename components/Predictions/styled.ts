@@ -2,13 +2,18 @@ import { styled } from 'styles/stitches.config'
 
 export const PredictionsContainer = styled('ul', {
   display: 'flex',
-  gap: '$3',
+  gap: '$4',
   alignSelf: 'center',
   overflowX: 'scroll',
-  width: 'calc($phoneWidth - $4)',
+  padding: '0 $2',
 })
 export const PredictionItem = styled('li', {
   fontSize: '$4',
+
+  '&:first-of-type': {
+    fontWeight: '$bold',
+    fontSize: '$5',
+  },
 })
 
 export const Separator = styled('div', {
