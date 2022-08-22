@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import { useCallback, useState } from 'react'
 
 import { useGetPredictionsQuery } from 'api/queries/getPredictions'
+import { useGetWordsListQuery } from 'api/queries/getWordsList'
 import { MemoizedDeleteButton as DeleteButton } from 'components/DeleteButton'
 import { Display } from 'components/Display'
 import { MemiozedHeader as Header } from 'components/Header'
@@ -12,6 +13,10 @@ import { Predictions } from 'components/Predictions'
 const Home: NextPage = () => {
   const [query, setQuery] = useState<number[]>([])
   const { data, isLoading } = useGetPredictionsQuery({ query })
+
+  const { data: wordsListData } = useGetWordsListQuery({ query })
+
+  console.log('wordsListData', wordsListData)
 
   const handleButtonClick = useCallback(
     (value: number) => {
