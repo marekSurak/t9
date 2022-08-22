@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
 
 import { useGetPredictionsQuery } from 'api/queries/getPredictions'
 import { DeleteButton } from 'components/DeleteButton'
@@ -14,13 +14,16 @@ const Home: NextPage = () => {
   const [enteredNumbers, setEnteredNumbers] = useState<number[]>([])
   const { data, isLoading } = useGetPredictionsQuery({ query: enteredNumbers })
 
-  const handleButtonClick = (value: number) => {
-    setEnteredNumbers((prevState) => [...prevState, value])
-  }
+  const handleButtonClick = useCallback(
+    (value: number) => {
+      setEnteredNumbers((prevState) => [...prevState, value])
+    },
+    [setEnteredNumbers]
+  )
 
-  const handleDeleteQuery = () => {
+  const handleDeleteQuery = useCallback(() => {
     setEnteredNumbers((prevState) => prevState.slice(0, -1))
-  }
+  }, [setEnteredNumbers])
 
   return (
     <Layout>

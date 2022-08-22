@@ -10,7 +10,8 @@ interface IProps {
   onButtonClick: (value: number) => void
 }
 
-export const Keyboard: FC<IProps> = ({ onButtonClick }) => {
+const KeyboardComponent: FC<IProps> = ({ onButtonClick }) => {
+  console.log('render')
   return (
     <KeyboardContainer>
       {keyboardButtons.map((button) => (
@@ -26,3 +27,5 @@ export const Keyboard: FC<IProps> = ({ onButtonClick }) => {
     </KeyboardContainer>
   )
 }
+
+export const Keyboard = React.memo(KeyboardComponent)
