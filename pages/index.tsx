@@ -6,7 +6,7 @@ import { MemoizedDeleteButton as DeleteButton } from 'components/DeleteButton'
 import { Display } from 'components/Display'
 import { MemiozedHeader as Header } from 'components/Header'
 import { MemoizedKeyboard as Keyboard } from 'components/Keyboard'
-import { PhoneMockup } from 'components/PhoneMockup'
+import { PhoneFrame } from 'components/PhoneFrame'
 import { Predictions } from 'components/Predictions'
 
 const Home: NextPage = () => {
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
   }, [setQuery])
 
   return (
-    <PhoneMockup>
+    <PhoneFrame>
       <Header />
       <Display>{query}</Display>
       <Predictions predictions={data} isLoading={isLoading} />
@@ -33,7 +33,7 @@ const Home: NextPage = () => {
       {query.length ? (
         <DeleteButton onClick={handleDeleteQuery}>x</DeleteButton>
       ) : null}
-    </PhoneMockup>
+    </PhoneFrame>
   )
 }
 
