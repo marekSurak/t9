@@ -8,7 +8,7 @@ interface IProps {
   onClick: () => void
 }
 
-const TOGGLE_ID = 'toggle'
+export const TOGGLE_ID = 'toggle'
 
 const Toggle: FC<IProps> = ({ checked, onClick }) => (
   <ToggleContainer>
