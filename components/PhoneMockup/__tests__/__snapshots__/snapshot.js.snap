@@ -32,7 +32,7 @@ exports[`Renders Phone frame unchanged 1`] = `
       </span>
     </div>
     <div
-      class="c-kiBZOh"
+      class="c-hrjGQK"
     >
       <section
         class="c-eMcnfs"
@@ -186,6 +186,16 @@ exports[`Renders Phone frame unchanged 1`] = `
           </span>
         </button>
       </section>
+      <div
+        class="c-dAPGUl"
+      >
+        <button
+          class="c-brIuIZ"
+          type="button"
+        >
+          x
+        </button>
+      </div>
     </div>
   </div>
 </div>

@@ -5,6 +5,7 @@ export const createQueryClient = () => {
     defaultOptions: {
       queries: {
         retry: 0,
+        staleTime: Infinity,
       },
     },
   })

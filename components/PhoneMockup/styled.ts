@@ -7,6 +7,7 @@ export const PhoneContainer = styled('div', {
 export const PhoneContent = styled('div', {
   display: 'grid',
   gridAutoRows: '1fr 2fr 2fr 2fr',
+  position: 'relative',
 
   width: '$phoneWidth',
   height: '$phoneHeight',
