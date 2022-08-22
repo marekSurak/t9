@@ -5,8 +5,7 @@ export const HeaderContainer = styled('header', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
-  paddingLeft: '1.5rem',
-  paddingRight: '0.5rem',
+  padding: '$1 0.5rem 0 1.5rem',
 })
 
 export const IconsContainer = styled('div', {
