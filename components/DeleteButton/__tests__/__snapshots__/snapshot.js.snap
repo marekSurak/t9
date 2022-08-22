@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders Button unchanged 1`] = `
+<div>
+  <div
+    class="c-dAPGUl"
+  >
+    <button
+      class="c-brIuIZ"
+      type="button"
+    >
+      Delete
+    </button>
+  </div>
+</div>
+`;
