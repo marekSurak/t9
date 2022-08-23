@@ -5,6 +5,8 @@ import { generatePredictions } from './generatePredictions'
 // Trying to find appropriate words that starts with prediction
 // 4355 -> hello
 export const generateWordsList = (query: string, wordList: string[]) => {
+  if (!query) return []
+
   const predictions = generatePredictions(query)
   const wordListMatch = wordList.filter((word) =>
     predictions.find((prediction) => word.startsWith(prediction))
