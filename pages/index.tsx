@@ -3,13 +3,13 @@ import { useCallback, useState } from 'react'
 
 import { useGetPredictionsQuery } from 'api/queries/getPredictions'
 import { useGetWordsListQuery } from 'api/queries/getWordsList'
+import { MemoizedCheckbox as Checkbox } from 'components/Checkbox'
 import { MemoizedDeleteButton as DeleteButton } from 'components/DeleteButton'
 import { Display } from 'components/Display'
 import { MemiozedHeader as Header } from 'components/Header'
 import { MemoizedKeyboard as Keyboard } from 'components/Keyboard'
 import { PhoneFrame } from 'components/PhoneFrame'
 import { Predictions } from 'components/Predictions'
-import { MemoizedToggle as Toggle } from 'components/Toggle'
 
 const Home: NextPage = () => {
   const [query, setQuery] = useState<number[]>([])
@@ -49,7 +49,7 @@ const Home: NextPage = () => {
         predictions={isRealWordsSearch ? wordsListData : predictionsData}
         isLoading={isLoading}
       />
-      <Toggle checked={isRealWordsSearch} onClick={handleToggle} />
+      <Checkbox checked={isRealWordsSearch} onClick={handleToggle} />
       <Keyboard onButtonClick={handleButtonClick} />
       {hasQuery ? (
         <DeleteButton onClick={handleDeleteQuery}>x</DeleteButton>

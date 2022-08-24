@@ -35,15 +35,15 @@ exports[`Renders Phone frame unchanged 1`] = `
       class="c-hQoGfL"
     >
       <div
-        class="c-kGfKpf"
+        class="c-igMNBK"
       >
         <label
-          for="toggle"
+          for="checkbox"
         >
           Use word list
         </label>
         <input
-          id="toggle"
+          id="checkbox"
           type="checkbox"
         />
       </div>
