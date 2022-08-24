@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toggle Renders Toggle checked 1`] = `
+<div>
+  <div
+    class="c-kGfKpf"
+  >
+    <label
+      for="toggle"
+    >
+      Use word list
+    </label>
+    <input
+      checked=""
+      id="toggle"
+      type="checkbox"
+    />
+  </div>
+</div>
+`;
+
+exports[`Toggle Renders Toggle unchecked 1`] = `
+<div>
+  <div
+    class="c-kGfKpf"
+  >
+    <label
+      for="toggle"
+    >
+      Use word list
+    </label>
+    <input
+      id="toggle"
+      type="checkbox"
+    />
+  </div>
+</div>
+`;

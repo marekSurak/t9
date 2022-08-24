@@ -32,8 +32,21 @@ exports[`Renders Phone frame unchanged 1`] = `
       </span>
     </div>
     <div
-      class="c-hrjGQK"
+      class="c-hQoGfL"
     >
+      <div
+        class="c-kGfKpf"
+      >
+        <label
+          for="toggle"
+        >
+          Use word list
+        </label>
+        <input
+          id="toggle"
+          type="checkbox"
+        />
+      </div>
       <section
         class="c-eMcnfs"
       >

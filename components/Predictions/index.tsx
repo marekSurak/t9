@@ -2,12 +2,13 @@ import type { FC } from 'react'
 import React from 'react'
 
 import type { TPredictions } from 'api/types/predictions'
+import { Spinner } from 'components/Spinner'
 
 import {
   PredictionsContainer,
   PredictionItem,
   Separator,
-  Loader,
+  PredicitonList,
 } from './styled'
 
 interface IProps {
@@ -17,12 +18,14 @@ interface IProps {
 
 export const Predictions: FC<IProps> = ({ predictions, isLoading }) => (
   <PredictionsContainer>
-    {isLoading && <Loader />}
-    {predictions?.map((prediction, index) => (
-      <React.Fragment key={prediction}>
-        <PredictionItem>{prediction}</PredictionItem>
-        {index < predictions.length - 1 && <Separator />}
-      </React.Fragment>
-    ))}
+    {isLoading && <Spinner />}
+    <PredicitonList>
+      {predictions?.map((prediction, index) => (
+        <React.Fragment key={prediction}>
+          <PredictionItem>{prediction}</PredictionItem>
+          {index < predictions.length - 1 && <Separator />}
+        </React.Fragment>
+      ))}
+    </PredicitonList>
   </PredictionsContainer>
 )
