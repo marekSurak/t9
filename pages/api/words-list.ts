@@ -4,7 +4,7 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 
 import { wordsListMock } from 'api/mocks/wordsList'
 import type { TWordsList } from 'api/types/wordsList'
-// import { generateWordsList } from 'api/utils/generateWordsList'
+import { generateWordsList } from 'api/utils/generateWordsList'
 
 // const wordArray = fs.readFileSync(wordListPath, 'utf8').split('\n')
 
