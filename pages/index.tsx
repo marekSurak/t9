@@ -15,11 +15,13 @@ const Home: NextPage = () => {
   const [query, setQuery] = useState<number[]>([])
   const [isRealWordsSearch, setRealWordsSearch] = useState<boolean>(false)
 
-  const { data: predictionsData, isLoading } = useGetPredictionsQuery({ query })
-  const { data: wordsListData } = useGetWordsListQuery({
-    query,
-    isRealWordsSearch,
-  })
+  const { data: predictionsData, isLoading: isPredictionsLoading } =
+    useGetPredictionsQuery({ query })
+  const { data: wordsListData, isLoading: isWordsListLoading } =
+    useGetWordsListQuery({
+      query,
+      isRealWordsSearch,
+    })
 
   const handleButtonClick = useCallback(
     (value: number) => {
@@ -37,6 +39,7 @@ const Home: NextPage = () => {
   }, [setRealWordsSearch])
 
   const hasQuery = !!query.length
+  const isLoading = hasQuery && (isPredictionsLoading || isWordsListLoading)
 
   return (
     <PhoneFrame>
@@ -46,7 +49,6 @@ const Home: NextPage = () => {
         predictions={isRealWordsSearch ? wordsListData : predictionsData}
         isLoading={isLoading}
       />
-
       <Toggle checked={isRealWordsSearch} onClick={handleToggle} />
       <Keyboard onButtonClick={handleButtonClick} />
       {hasQuery ? (

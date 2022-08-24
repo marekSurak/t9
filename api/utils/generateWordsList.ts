@@ -12,5 +12,7 @@ export const generateWordsList = (query: string, wordList: string[]) => {
     predictions.find((prediction) => word.startsWith(prediction))
   )
 
+  // we are returning only first X items to keep performance
+  // in real world something like paging will be implemented
   return wordListMatch.slice(0, MAX_WORD_LIST_COUNT)
 }
