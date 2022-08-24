@@ -3,16 +3,16 @@
 exports[`Toggle Renders Toggle checked 1`] = `
 <div>
   <div
-    class="c-kGfKpf"
+    class="c-igMNBK"
   >
     <label
-      for="toggle"
+      for="checkbox"
     >
       Use word list
     </label>
     <input
       checked=""
-      id="toggle"
+      id="checkbox"
       type="checkbox"
     />
   </div>
@@ -22,15 +22,15 @@ exports[`Toggle Renders Toggle checked 1`] = `
 exports[`Toggle Renders Toggle unchecked 1`] = `
 <div>
   <div
-    class="c-kGfKpf"
+    class="c-igMNBK"
   >
     <label
-      for="toggle"
+      for="checkbox"
     >
       Use word list
     </label>
     <input
-      id="toggle"
+      id="checkbox"
       type="checkbox"
     />
   </div>
