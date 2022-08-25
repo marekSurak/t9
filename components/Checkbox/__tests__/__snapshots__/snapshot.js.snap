@@ -2,7 +2,7 @@
 
 exports[`Toggle Renders Toggle checked 1`] = `
 <div>
-  <div
+  <section
     class="c-igMNBK"
   >
     <label
@@ -15,13 +15,13 @@ exports[`Toggle Renders Toggle checked 1`] = `
       id="checkbox"
       type="checkbox"
     />
-  </div>
+  </section>
 </div>
 `;
 
 exports[`Toggle Renders Toggle unchecked 1`] = `
 <div>
-  <div
+  <section
     class="c-igMNBK"
   >
     <label
@@ -33,6 +33,6 @@ exports[`Toggle Renders Toggle unchecked 1`] = `
       id="checkbox"
       type="checkbox"
     />
-  </div>
+  </section>
 </div>
 `;

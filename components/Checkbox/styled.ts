@@ -1,6 +1,6 @@
 import { styled } from 'styles/stitches.config'
 
-export const CheckboxContainer = styled('div', {
+export const CheckboxContainer = styled('section', {
   height: '$2',
   display: 'flex',
   alignItems: 'center',

@@ -61,7 +61,7 @@ const Home: NextPage = () => {
           isLoading={isLoading}
         />
         <Checkbox checked={isRealWordsSearch} onClick={handleToggle} />
-        <Keyboard onButtonClick={handleButtonClick} />
+        <Keyboard onClick={handleButtonClick} />
         {hasQuery ? (
           <DeleteButton onClick={handleDeleteQuery}>x</DeleteButton>
         ) : null}

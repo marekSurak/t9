@@ -1,6 +1,6 @@
 import { styled } from 'styles/stitches.config'
 
-export const PhoneContainer = styled('div', {
+export const PhoneContainer = styled('section', {
   position: 'relative',
 })
 

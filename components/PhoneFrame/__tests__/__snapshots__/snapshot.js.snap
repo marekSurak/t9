@@ -2,7 +2,7 @@
 
 exports[`Renders Phone frame unchanged 1`] = `
 <div>
-  <div
+  <section
     class="c-cmpvrW"
   >
     <div
@@ -34,7 +34,7 @@ exports[`Renders Phone frame unchanged 1`] = `
     <div
       class="c-hQoGfL"
     >
-      <div
+      <section
         class="c-igMNBK"
       >
         <label
@@ -46,7 +46,7 @@ exports[`Renders Phone frame unchanged 1`] = `
           id="checkbox"
           type="checkbox"
         />
-      </div>
+      </section>
       <section
         class="c-eMcnfs"
       >
@@ -210,6 +210,6 @@ exports[`Renders Phone frame unchanged 1`] = `
         </button>
       </div>
     </div>
-  </div>
+  </section>
 </div>
 `;
