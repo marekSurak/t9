@@ -96,3 +96,7 @@ User can check `Use word list` checkbox to get real words from API.
 `yarn test` - run unit and snapshot tests
 
 ## Demo
+
+https://user-images.githubusercontent.com/20334563/186728528-aff11c04-abb5-4ed0-9ccd-70590ea41216.mov
+
+
