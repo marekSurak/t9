@@ -5,7 +5,7 @@ export const Button = styled('button', {
   flexFlow: 'column',
   justifyContent: 'center',
   alignItems: 'center',
-  background: '$button',
+  background: '$lightGray',
 
   border: 'none',
   borderRadius: '50%',
@@ -14,6 +14,6 @@ export const Button = styled('button', {
   height: '$5',
 
   '&:hover': {
-    background: '$buttonHover',
+    background: '$dimGray',
   },
 })

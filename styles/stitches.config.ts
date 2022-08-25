@@ -6,8 +6,9 @@ export const { styled, getCssText } = createStitches({
       montserrat: 'Montserrat, -aple-system, system-ui',
     },
     colors: {
-      button: '#e5e5e4',
-      buttonHover: '#c6c6c6',
+      dark: '#000',
+      lightGray: '#e5e5e4',
+      dimGray: '#c6c6c6',
       light: '#f7f7f7',
     },
     fontSizes: {

@@ -3,7 +3,7 @@ import { keyframes } from '@stitches/react'
 import { styled } from 'styles/stitches.config'
 
 const fadeKeyframes = keyframes({
-  '0%': { backgroundColor: '$buttonHover' },
+  '0%': { backgroundColor: '$dimGray' },
   '100%': { backgroundColor: 'transparent' },
 })
 

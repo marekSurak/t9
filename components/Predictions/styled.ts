@@ -7,7 +7,7 @@ export const PredictionsContainer = styled('div', {
 
 export const PredicitonList = styled('ul', {
   display: 'flex',
-  width: 'calc($phoneWidth - 4rem)',
+  width: 'calc($phoneWidth - $4)',
   gap: '$4',
   padding: '0 $2 $3',
   overflowX: 'scroll',
@@ -29,5 +29,5 @@ export const PredictionItem = styled('li', {
 })
 
 export const Separator = styled('div', {
-  borderRight: '1px solid $button',
+  borderRight: '1px solid $lightGray',
 })
