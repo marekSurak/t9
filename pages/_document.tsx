@@ -8,6 +8,14 @@ export default class Document extends NextDocument {
     return (
       <Html lang="en">
         <Head>
+          <link rel="canonical" href="https://t9.mareksurak.com" />
+          <link rel="icon" href="/favicon.ico" />
+          <link
+            rel="preload"
+            href="/fonts/Montserrat-Regular.ttf"
+            as="font"
+            crossOrigin="anonymous"
+          />
           <style
             id="stitches"
             dangerouslySetInnerHTML={{ __html: getCssText() }}
