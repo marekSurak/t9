@@ -10,6 +10,7 @@ import { MemiozedHeader as Header } from 'components/Header'
 import { MemoizedKeyboard as Keyboard } from 'components/Keyboard'
 import { PhoneFrame } from 'components/PhoneFrame'
 import { Predictions } from 'components/Predictions'
+import { Seo } from 'components/Seo'
 
 const Home: NextPage = () => {
   const [query, setQuery] = useState<number[]>([])
@@ -42,19 +43,22 @@ const Home: NextPage = () => {
   const isLoading = hasQuery && (isPredictionsLoading || isWordsListLoading)
 
   return (
-    <PhoneFrame>
-      <Header />
-      <Display>{query}</Display>
-      <Predictions
-        predictions={isRealWordsSearch ? wordsListData : predictionsData}
-        isLoading={isLoading}
-      />
-      <Checkbox checked={isRealWordsSearch} onClick={handleToggle} />
-      <Keyboard onButtonClick={handleButtonClick} />
-      {hasQuery ? (
-        <DeleteButton onClick={handleDeleteQuery}>x</DeleteButton>
-      ) : null}
-    </PhoneFrame>
+    <>
+      <Seo />
+      <PhoneFrame>
+        <Header />
+        <Display>{query}</Display>
+        <Predictions
+          predictions={isRealWordsSearch ? wordsListData : predictionsData}
+          isLoading={isLoading}
+        />
+        <Checkbox checked={isRealWordsSearch} onClick={handleToggle} />
+        <Keyboard onButtonClick={handleButtonClick} />
+        {hasQuery ? (
+          <DeleteButton onClick={handleDeleteQuery}>x</DeleteButton>
+        ) : null}
+      </PhoneFrame>
+    </>
   )
 }
 
