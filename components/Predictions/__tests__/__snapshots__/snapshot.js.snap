@@ -2,7 +2,7 @@
 
 exports[`Renders Predictions unchanged 1`] = `
 <div>
-  <div
+  <section
     class="c-dfaZuU"
   >
     <ul
@@ -78,6 +78,6 @@ exports[`Renders Predictions unchanged 1`] = `
         cf
       </li>
     </ul>
-  </div>
+  </section>
 </div>
 `;
