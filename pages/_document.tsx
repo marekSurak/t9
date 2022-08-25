@@ -17,7 +17,9 @@ export default class Document extends NextDocument {
             crossOrigin="anonymous"
           />
           <style
+            // eslint-disable-next-line react/forbid-dom-props
             id="stitches"
+            // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{ __html: getCssText() }}
           />
         </Head>

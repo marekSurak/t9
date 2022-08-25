@@ -11,16 +11,24 @@ import { MemoizedKeyboard as Keyboard } from 'components/Keyboard'
 import { PhoneFrame } from 'components/PhoneFrame'
 import { Predictions } from 'components/Predictions'
 import { Seo } from 'components/Seo'
+import type { TQuery } from 'types/query'
+import { useQueryDebounce } from 'utils/useQueryDebounce'
 
 const Home: NextPage = () => {
-  const [query, setQuery] = useState<number[]>([])
+  const [query, setQuery] = useState<TQuery>([])
+
+  // detect wheter user checked real word list
   const [isRealWordsSearch, setRealWordsSearch] = useState<boolean>(false)
 
+  // debounce query entered by user to not overload API
+  const debouncedQuery = useQueryDebounce({ query })
+
   const { data: predictionsData, isLoading: isPredictionsLoading } =
-    useGetPredictionsQuery({ query })
+    useGetPredictionsQuery({ query: debouncedQuery })
+
   const { data: wordsListData, isLoading: isWordsListLoading } =
     useGetWordsListQuery({
-      query,
+      query: debouncedQuery,
       isRealWordsSearch,
     })
 
