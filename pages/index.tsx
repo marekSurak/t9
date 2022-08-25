@@ -16,7 +16,7 @@ const Home: NextPage = () => {
   const [isRealWordsSearch, setRealWordsSearch] = useState<boolean>(false)
 
   const { data: predictionsData, isLoading: isPredictionsLoading } =
-    useGetPredictionsQuery({ query })
+    useGetPredictionsQuery({ query: '1' })
   const { data: wordsListData, isLoading: isWordsListLoading } =
     useGetWordsListQuery({
       query,
