@@ -15,6 +15,7 @@ export const globalStyles = globalCss({
     fontWeight: 400,
     fontSize: '1.6rem',
     fontFamily: 'Montserrat',
+    color: '$dark',
   },
   html: {
     boxSizing: 'border-box',
@@ -33,6 +34,7 @@ export const globalStyles = globalCss({
   },
   'button, a': {
     cursor: 'pointer',
+    color: '$dark',
   },
   button: {
     '&:disabled': {

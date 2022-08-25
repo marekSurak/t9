@@ -11,17 +11,17 @@ export const Button = styled('button', {
   position: 'relative',
   width: '1.5rem',
   height: '1.5rem',
-  background: '$button',
+  background: '$lightGray',
   fontSize: '$4',
   display: 'flex',
   alignItems: 'flex-end',
   justifyContent: 'flex-start',
 
   '&:hover': {
-    background: '$buttonHover',
+    background: '$dimGray',
 
     '&::before': {
-      borderRight: '0.75rem solid $buttonHover',
+      borderRight: '0.75rem solid $dimGray',
     },
   },
 
@@ -32,6 +32,6 @@ export const Button = styled('button', {
     top: '0',
     borderTop: '0.75rem solid transparent',
     borderBottom: '0.75rem solid transparent',
-    borderRight: '0.75rem solid $button',
+    borderRight: '0.75rem solid $lightGray',
   },
 })
