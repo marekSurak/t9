@@ -7,16 +7,16 @@ import { keyboardButtons } from 'constants/keyboard'
 import { ButtonNumber, ButtonText, KeyboardContainer } from './styled'
 
 interface IProps {
-  onButtonClick: (value: number) => void
+  onClick: (value: number) => void
 }
 
-const Keyboard: FC<IProps> = ({ onButtonClick }) => (
+const Keyboard: FC<IProps> = ({ onClick }) => (
   <KeyboardContainer>
     {keyboardButtons.map((button) => (
       <Button
         key={button.value}
         type="button"
-        onClick={() => onButtonClick(button.value)}
+        onClick={() => onClick(button.value)}
       >
         <ButtonNumber>{button.value}</ButtonNumber>
         <ButtonText>{button.label}</ButtonText>
