@@ -1,6 +1,6 @@
 import { styled } from 'styles/stitches.config'
 
-export const PredictionsContainer = styled('div', {
+export const PredictionsContainer = styled('section', {
   alignSelf: 'center',
   textAlign: 'center',
 })
