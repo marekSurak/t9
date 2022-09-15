@@ -1,4 +1,4 @@
-import type { TPredictions } from 'api/types/predictions'
+import type { TPredictions } from 'apiUtils/types/predictions'
 
 export const predictionsMock: TPredictions = [
   'ad',

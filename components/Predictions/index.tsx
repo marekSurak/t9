@@ -1,7 +1,7 @@
 import type { FC } from 'react'
 import React from 'react'
 
-import type { TPredictions } from 'api/types/predictions'
+import type { TPredictions } from 'apiUtils/types/predictions'
 import { Spinner } from 'components/Spinner'
 
 import {

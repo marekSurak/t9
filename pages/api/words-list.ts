@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 
-import type { TWordsList } from 'api/types/wordsList'
-import { generateWordsList } from 'api/utils/generateWordsList'
+import type { TWordsList } from 'apiUtils/types/wordsList'
+import { generateWordsList } from 'apiUtils/utils/generateWordsList'
 
 export default function handler(
   req: NextApiRequest,

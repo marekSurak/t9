@@ -1,10 +1,10 @@
 import type { UseQueryOptions } from 'react-query'
 import { useQuery } from 'react-query'
 
-import { API_URL } from 'api/constants/api'
-import type { TPredictions } from 'api/types/predictions'
-import type { IRequestException } from 'api/types/requestException'
-import { getUrlParams } from 'api/utils/getUrlParams'
+import { API_URL } from 'apiUtils/constants/api'
+import type { TPredictions } from 'apiUtils/types/predictions'
+import type { IRequestException } from 'apiUtils/types/requestException'
+import { getUrlParams } from 'apiUtils/utils/getUrlParams'
 
 interface IProps {
   query: number[]

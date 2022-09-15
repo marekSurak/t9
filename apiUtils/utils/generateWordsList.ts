@@ -1,4 +1,4 @@
-import { MAX_WORD_LIST_COUNT } from 'api/constants/wordList'
+import { MAX_WORD_LIST_COUNT } from 'apiUtils/constants/wordList'
 
 import { assignWordsToDigits } from './assignWordsToDigits'
 import { generatePredictions } from './generatePredictions'

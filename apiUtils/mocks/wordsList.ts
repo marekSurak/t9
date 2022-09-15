@@ -1,4 +1,4 @@
-import type { TWordsList } from 'api/types/wordsList'
+import type { TWordsList } from 'apiUtils/types/wordsList'
 
 export const wordsListMock: TWordsList = [
   'hello',
