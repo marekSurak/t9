@@ -1,4 +1,4 @@
-import { digitsMap } from 'api/constants/digitsMap'
+import { digitsMap } from 'apiUtils/constants/digitsMap'
 
 // Function get '23' and should return 'ad, ae, af...'
 export const generatePredictions = (query: string) => {

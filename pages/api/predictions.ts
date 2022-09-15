@@ -1,9 +1,9 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
 
-import { MAX_WORD_LIST_COUNT } from 'api/constants/wordList'
-import type { TPredictions } from 'api/types/predictions'
-import { generatePredictions } from 'api/utils/generatePredictions'
+import { MAX_WORD_LIST_COUNT } from 'apiUtils/constants/wordList'
+import type { TPredictions } from 'apiUtils/types/predictions'
+import { generatePredictions } from 'apiUtils/utils/generatePredictions'
 
 export default function handler(
   req: NextApiRequest,

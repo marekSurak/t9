@@ -1,8 +1,8 @@
 import type { NextPage } from 'next'
 import { useCallback, useState } from 'react'
 
-import { useGetPredictionsQuery } from 'api/queries/getPredictions'
-import { useGetWordsListQuery } from 'api/queries/getWordsList'
+import { useGetPredictionsQuery } from 'apiUtils/queries/getPredictions'
+import { useGetWordsListQuery } from 'apiUtils/queries/getWordsList'
 import { MemoizedCheckbox as Checkbox } from 'components/Checkbox'
 import { MemoizedDeleteButton as DeleteButton } from 'components/DeleteButton'
 import { Display } from 'components/Display'

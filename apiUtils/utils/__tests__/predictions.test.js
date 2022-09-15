@@ -1,4 +1,4 @@
-import { generatePredictions } from 'api/utils/generatePredictions'
+import { generatePredictions } from 'apiUtils/utils/generatePredictions'
 
 describe('Api utils - generatePredictions', () => {
   test('Retrun empty array when no input provided', () => {

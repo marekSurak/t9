@@ -1,5 +1,5 @@
-import { generateWordsList } from 'api/utils/generateWordsList'
-import { wordsListMock } from 'api/mocks/wordsList'
+import { generateWordsList } from 'apiUtils/utils/generateWordsList'
+import { wordsListMock } from 'apiUtils/mocks/wordsList'
 
 describe('Api utils - generateWordsList', () => {
   test('Retrun empty array when no input provided', () => {
