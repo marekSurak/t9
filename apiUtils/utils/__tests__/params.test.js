@@ -1,4 +1,4 @@
-import { getUrlParams } from 'api/utils/getUrlParams'
+import { getUrlParams } from 'apiUtils/utils/getUrlParams'
 
 describe('Api utils - getUrlParams', () => {
   test('Retrun empty string when no params provided', () => {
