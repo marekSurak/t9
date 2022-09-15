@@ -41,7 +41,7 @@ For more information about T9 follow these links:
 
 ### API
 
-I used [Next API routes](https://nextjs.org/docs/api-routes/introduction) as an API endpoints as a Node.js serverless function. For app like this I consider solution provided by Next.js as a sufficient altough with bigger app I would build my own API using Node.js + Express.
+I used [Next API routes](https://nextjs.org/docs/api-routes/introduction) as an API endpoints as a Node.js serverless function. For app like this I consider solution provided by Next.js.
 
 There are 2 endpoints:
 
@@ -49,10 +49,19 @@ There are 2 endpoints:
 - `/words-list` - returns the real words given the numeric input (43556 -> 'hello')
 
 List of real words is taken from [https://github.com/sindresorhus/word-list](https://github.com/sindresorhus/word-list).
+From this list the hash table is created for better access and smaller time complexity. The list is huge, so the generated file with hash has 5.3MB.
+Table is implemented in this format:
+```
+[
+ 2, ['a...', b...', 'c..'],
+ 3, ['d...', e...', 'f..'],
+ 4, ['g...', h...', 'i..'],
+]
+```
+So when user input query `23` I know that I has to access key `2` and find among these values instead of going thorugh the whole list of words.
 
 As you can imagine displaying all possible combinations can cause a performance issues both on the backend and frontend side so I decide to return only first 50 results (`MAX_WORD_LIST_COUNT`).
-The ideal solution would be implementing paging so I would display just first `X` predictions and on user scroll I will ask API for another `X` predictions and etc. I didn't have enough time to implement this feature so I decided to do a quick fix using `MAX_WORD_LIST_COUNT`.
-
+ 
 ### UI
 
 I created a simple keyboard UI with IPhone frame to create a realistic usage.
